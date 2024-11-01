@@ -26,7 +26,7 @@ class Var(object):
     OWNER_ID = [int(x) for x in os.environ.get("OWNER_ID", "775874858").split()]
     NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = None
-    OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'biisal'))
+    OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'murdock_vhai'))
     if 'DYNO' in environ:
         ON_HEROKU = True
         APP_NAME = str(getenv('APP_NAME')) #dont need to fill anything here
